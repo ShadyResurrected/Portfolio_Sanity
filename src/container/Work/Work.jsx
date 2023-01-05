@@ -49,7 +49,8 @@ const Work = () => {
       </h2>
 
       <div className="app__work-filter">
-        {['Frontend Projects', 'Backend Projects', 'E-Commerce Projects', 'JS Projects', 'All'].map((item, index) => (
+        {/* contains all the projects sorted as per the tags written below */}
+        {['Frontend Projects', 'Backend Projects', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
