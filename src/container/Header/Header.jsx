@@ -33,9 +33,15 @@ const Header = () => {
             </div>
           </div>
 
+          <div className="hire_div">
           <div className='tag-cmp app__flex'>
             <p className='p-text'>Programmer</p>
             <p className='p-text'>Web Developer</p>
+          </div>
+
+          <div className='app__flex' style={{marginTop : "2.2rem"}}>
+            <button class="learn-more">Hire Me</button>
+          </div>
           </div>
         </div>
       </motion.div>

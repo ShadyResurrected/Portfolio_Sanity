@@ -19,13 +19,6 @@
     justify-content: flex-start;
     align-items: center;
 
-    // Since the img tag is nested inside this class we can access it here rather creating a new css selector
-    img{
-        position: absolute;
-        height: 170px;
-        width: 170px;
-    }
-
     // We can also apply media queries for a particular element
     @media screen and (min-width : 2000px) {
         width: 180px;
@@ -36,7 +29,7 @@
 .app__navbar-links{
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 
     list-style: none;
@@ -60,6 +53,9 @@
             color: var(--gray-color);
             text-decoration: none;
             flex-direction: column;
+
+            font-size: 1rem;
+            color: #000;
 
             text-transform: uppercase;
             font-weight: 500;
