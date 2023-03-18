@@ -28,7 +28,7 @@ const SocialMedia = () => {
       </Tooltip>
 
 
-      <Tooltip title="Hackerrank" placement="right" arrow style={{ cursor: 'pointer' }} onClick={() => window.open('https://www.linkedin.com/in/chandradeep-chandra-805388135/', '_blank')}>
+      <Tooltip title="Hackerrank" placement="right" arrow style={{ cursor: 'pointer' }} onClick={() => window.open('https://www.hackerrank.com/cchandra554', '_blank')}>
         <div>
           <SiHackerrank />
         </div>

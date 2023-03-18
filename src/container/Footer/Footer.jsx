@@ -8,6 +8,7 @@ import './Footer.scss'
 
 const Footer = () => {
 
+  
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
   const [isFormSubmitted, setIsFormSubmitted] = useState(false)
   const [loading, setLoading] = useState(false);
@@ -38,7 +39,7 @@ const Footer = () => {
   return (
     <>
       <h2 className="head-text">happy to engage in a conversation with you</h2>
-      <div className='app__footer-cards'>
+      <div className='app__footer-cards' id='contact'>
         <div className="app__footer-card">
           <img src={images.email} alt="email" />
           <a href="mailto:cchandra554@gmail.com" className='p-text'>cchandra554@gmail.com</a>

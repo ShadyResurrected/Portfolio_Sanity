@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 
 import { AppWrap } from '../../wrapper'
 import { images } from '../../constants'
+
 import './Header.scss'
 
 const scaleVariants = {
@@ -17,6 +18,15 @@ const scaleVariants = {
 }
 
 const Header = () => {
+
+  function handleScroll() {
+    window.scroll({
+      top: document.body.offsetHeight,
+      left: 0, 
+      behavior: 'smooth',
+    });
+  }
+
   return (
     <div className='app__header app__flex'>
       <motion.div
@@ -40,7 +50,7 @@ const Header = () => {
           </div>
 
           <div className='app__flex' style={{marginTop : "2.2rem"}}>
-            <button class="learn-more">Hire Me</button>
+            <button type="button" class="learn-more" onClick={handleScroll}>Hire Me</button>
           </div>
           </div>
         </div>
